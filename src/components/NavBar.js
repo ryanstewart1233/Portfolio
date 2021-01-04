@@ -1,6 +1,6 @@
 import "../styles/NavBar.scss";
 import { Link } from "react-router-dom";
-import { HashLink, HaskLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import React, { useEffect } from "react";
 // import ReactDOM from 'react-dom'
 

@@ -1,0 +1,17 @@
+@import "../style-variables/scss-variables";
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
+  margin: auto;
+  max-width: 150rem;
+}
+
+.projects-section {
+  background-color: $color-grey-light-2;
+  height: 100%;
+
+  padding: 20rem 0;
+  margin-top: -17rem;
+}

@@ -1,0 +1,43 @@
+$color-white: #fff;
+
+$color-primary:red; 
+$color-primary-light:blue;
+
+
+
+$color-primary: #221c69;
+$color-secondary: #080942;
+$color-tertiary:#431c76;
+
+
+$color-dark-1: #191a1d;
+$color-grey-light: #ababab;
+$color-grey-light-2: #f6f6f6;
+
+
+$color-red: #ff0000;
+
+@mixin resetLink {
+    color: inherit;
+    background-color: inherit;
+    background-image: none;
+
+    cursor: pointer;
+
+    
+
+    &:link,
+    &:visited {
+        color: inherit;
+        text-decoration: none;
+
+        
+    }
+}
+
+
+$padding: 0 30rem; 
+$bp-largest: 110em;
+
+
+

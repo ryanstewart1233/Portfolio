@@ -1,0 +1,50 @@
+@import "../style-variables/scss-variables";
+
+.footer {
+  background-color: $color-dark-1;
+
+  height: min-content;
+  width: 100%;
+
+  position: relative;
+
+  z-index: 1;
+
+  padding-top: 20rem;
+  margin-top: -12rem;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  &__icon {
+    fill: $color-red;
+    height: 3rem;
+    width: 3rem;
+
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-0.3rem) scale(1.5);
+      background-color: white;
+      padding: 0.3rem;
+      border-radius: 50%;
+    }
+
+    &__container {
+      display: flex;
+      gap: 3rem;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+
+  &__copyright {
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+  }
+}

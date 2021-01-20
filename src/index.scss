@@ -1,34 +1,39 @@
 @import "./style-variables/css-variables.scss";
 @import "./style-variables/scss-variables.scss";
 
-
 *,
 *::after,
 *::before {
   margin: 0;
-  padding:0;
+  padding: 0;
 
   box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%; // 1rem = 10px
-}
 
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+
+  @media only screen and (max-width: $bp-small-l) {
+    font-size: 48%;
+  }
+}
 
 body {
   box-sizing: border-box;
-  font-family: "Rubik","Arial",sans-serif;
-  
-  
+  font-family: "Rubik", "Arial", sans-serif;
 }
 
-::selection { //changes highlighting colors
+::selection {
+  //changes highlighting colors
   background-color: $color-red;
   color: $color-white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

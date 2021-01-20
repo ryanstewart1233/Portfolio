@@ -1,9 +1,9 @@
 @import "../style-variables/scss-variables";
 
 .skills {
-  padding: $padding;
+  padding: 5rem 20rem;
   @media only screen and (max-width: $bp-largest) {
-    padding: 0 15rem;
+    padding: 5rem 15rem;
   }
 
   display: grid;
@@ -28,6 +28,10 @@
 
     font-size: 2rem;
     margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 1.7rem;
+    }
   }
 
   &__bar-container {

@@ -1,43 +1,36 @@
 $color-white: #fff;
 
-$color-primary:red; 
-$color-primary-light:blue;
-
-
+$color-primary: red;
+$color-primary-light: blue;
 
 $color-primary: #221c69;
 $color-secondary: #080942;
-$color-tertiary:#431c76;
-
+$color-tertiary: #431c76;
 
 $color-dark-1: #191a1d;
 $color-grey-light: #ababab;
 $color-grey-light-2: #f6f6f6;
 
-
 $color-red: #ff0000;
 
 @mixin resetLink {
+  color: inherit;
+  background-color: inherit;
+  background-image: none;
+
+  cursor: pointer;
+
+  &:link,
+  &:visited {
     color: inherit;
-    background-color: inherit;
-    background-image: none;
-
-    cursor: pointer;
-
-    
-
-    &:link,
-    &:visited {
-        color: inherit;
-        text-decoration: none;
-
-        
-    }
+    text-decoration: none;
+  }
 }
 
-
-$padding: 0 30rem; 
-$bp-largest: 110em;
-
-
-
+//BreakPoints
+$bp-largest: 110em; //1760px
+$bp-larger: 100em; //1600px
+$bp-large: 93.75em; //1500px
+$bp-medium: 81.25em; //1300px
+$bp-medium-s: 68.75em; //1100px
+$bp-small-l: 62.5em;

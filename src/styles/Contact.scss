@@ -1,64 +1,60 @@
-@import '../style-variables/scss-variables';
-
-
+@import "../style-variables/scss-variables";
 
 .contact {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
+  }
 
-    
+  background-color: $color-grey-light-2;
 
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
-        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);   
+  height: minmax(min-content, 60rem);
+  width: 100%;
+
+  position: relative;
+  z-index: 1;
+  padding: 17rem;
+  margin-bottom: -17rem;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  &__title {
+    text-align: center;
+
+    font-size: 3rem;
+    width: 20%;
+
+    margin-bottom: 3rem;
+
+    color: $color-grey-light;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 4px solid rgba($color-grey-light, 0.1);
+  }
+
+  &__text {
+    font-size: 3rem;
+    width: 30%;
+    line-height: 4rem;
+
+    text-align: center;
+
+    color: $color-red;
+    font-weight: 400;
+
+    @media only screen and (max-width: $bp-larger) {
+      width: 40%;
     }
-
-    background-color: $color-grey-light-2;
-
-    height: minmax(min-content,60rem);
-    width: 100%;
-
-    position: relative;
-    z-index: 1;
-    padding-top:8rem;
-    padding-bottom: 10rem;
-    margin-bottom: -10rem;
-
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: space-between;
-    
-    align-items: center;
-
-    &__title {
-        
-        text-align: center;
-
-        font-size: 3rem;
-        width: 10%;
-
-        margin-bottom: 3rem;
-
-        color: $color-grey-light;
-        text-transform: uppercase;
-        font-weight: 400;
-        border-bottom: 4px solid rgba($color-grey-light,0.1);
-    
+    @media only screen and (max-width: $bp-medium) {
+      width: 60%;
     }
+  }
 
-    &__text {
-        font-size: 3rem;
-        width: 30%;
-        line-height: 4rem;
-
-        text-align: center;
-
-        color: $color-red;
-        font-weight: 400;
-
-       
-    }
-
-    &__btn {
-        
-    }
+  &__btn {
+  }
 }

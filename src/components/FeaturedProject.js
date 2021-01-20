@@ -24,7 +24,7 @@ const FeaturedProject = () => {
                 demonstrate my knowledge of many technologies that I have
                 learnt.
               </span>
-
+              <br />
               <span>Technologies used in this project are as follows:</span>
             </span>
             <ul className="project__description__list">

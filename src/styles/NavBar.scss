@@ -1,149 +1,135 @@
-@import '../style-variables/scss-variables';
-
+@import "../style-variables/scss-variables";
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
 
-    background-color: $color-dark-1;
+  background-color: $color-dark-1;
 
-    color: $color-white;
+  color: $color-white;
 
-    
-
-      padding: $padding;
-
-  @media only screen and (max-width: $bp-largest) {
-    padding: 0 15rem; 
-  }
+  padding: 5rem 10rem;
 
   padding-top: 6rem;
-    
-    
 
-    link,
-    :visited {
+  @media only screen and (max-width: $bp-largest) {
+    padding: 6rem 15rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 6rem 10rem;
+  }
+
+  @media only screen and (max-width: $bp-small-l) {
+    padding: 7rem 8rem;
+  }
+
+  link,
+  :visited {
+    color: $color-white; //current color didn't work on deployment
+    text-decoration: none;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3rem;
+    position: relative;
+    cursor: pointer;
+
+    text-decoration: none;
+
+    a {
+      &:link,
+      &:visited {
         color: currentColor;
         text-decoration: none;
+      }
     }
 
+    &::after {
+      content: "";
+      background-color: $color-red;
+      height: 0.5rem;
+      width: 3rem;
+      border-radius: 10rem;
+      position: absolute;
+      bottom: -1rem;
+      left: 0rem;
 
+      z-index: 3;
 
-    &__name {
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 3rem;
-        position: relative;
-        cursor: pointer;
+      transition: all 0.5s;
+      transition-timing-function: cubic-bezier(0.91, 0.1, 0.57, 1.58);
+    }
 
+    &:hover::after {
+      width: 20rem;
+    }
+  }
+
+  &__items {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    font-size: 2.5rem;
+    color: $color-grey-light;
+
+    a {
+      &:link,
+      &:visited {
+        color: currentColor;
         text-decoration: none;
-        
-        a {
-            &:link,
-            &:visited {
-            color: currentColor;
-            text-decoration: none;
-        }
+      }
     }
-       
-        &::after {
-            content: "";
-            background-color:$color-red;
-            height: 0.5rem;
-            width: 3rem;
-            border-radius: 10rem;
-            position: absolute;
-            bottom: -1rem;
-            left: 0rem;
+  }
 
-            z-index: 3;
+  &__item {
+    cursor: pointer;
+    transition: all 0.2s;
 
-            transition: all 0.5s;
-            transition-timing-function: cubic-bezier(0.91,0.1,0.57,1.58);
-    
-            
-        }
+    position: relative;
 
-        &:hover::after {
-            width: 20rem;
-        }
-
+    &:hover {
+      color: $color-white;
     }
 
-    &__items {
-        display: flex;
-        gap: 5rem;
-        list-style: none;
-        font-size: 2.5rem;
-        color: $color-grey-light;
-        
-        a {
-            &:link,
-            &:visited {
-            color: currentColor;
-            text-decoration: none;
-        }
-        }
-        
+    &::after {
+      content: "";
+      display: block;
+      background-color: $color-red;
+      height: 0.5rem;
+      width: 1rem;
+      transform: translateX(-50%);
+      border-radius: 10rem;
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      opacity: 0;
 
-        
+      z-index: 3;
+
+      transition: opacity 0.3s, width 0.5s;
+      transition-timing-function: cubic-bezier(0.91, 0.1, 0.57, 1.58);
     }
 
-    &__item {
-        cursor: pointer;
-        transition: all .2s;
-
-        position: relative;
-        
-
-        &:hover {
-            color: $color-white;
-        }
-
-        &::after {
-            content: "";
-            display: block;
-            background-color:$color-red;
-            height: 0.5rem;
-            width: 1rem;
-            transform: translateX(-50%);
-            border-radius: 10rem;
-            position: absolute;
-            bottom: -1rem;
-            left: 50%;
-            opacity: 0;
-
-            z-index: 3;
-
-            transition: opacity 0.3s, width 0.5s;
-            transition-timing-function: cubic-bezier(0.91,0.1,0.57,1.58);
-    
-            
-        }
-
-        &:hover::after {
-            width: 70%;
-            opacity: 1;
-        }
-
-        &__active::after {
-            width: 70%;
-            opacity: 1;
-
-            
-        }
-
-        &__active { 
-            color: $color-white;
-
-            transition: all 0.1s;
-            transition-timing-function: cubic-bezier(0.91,0.1,0.57,1.58);
-    
-            
-        }
-
-
+    &:hover::after {
+      width: 70%;
+      opacity: 1;
     }
+
+    &__active::after {
+      width: 70%;
+      opacity: 1;
+    }
+
+    &__active {
+      color: $color-white;
+
+      transition: all 0.1s;
+      transition-timing-function: cubic-bezier(0.91, 0.1, 0.57, 1.58);
+    }
+  }
 }

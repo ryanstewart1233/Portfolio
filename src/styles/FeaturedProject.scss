@@ -1,58 +1,40 @@
-@import '../style-variables/scss-variables';
-
-
+@import "../style-variables/scss-variables";
 
 .featured-project {
+  padding: 15rem;
 
+  background-color: $color-grey-light-2;
+  margin-top: -17rem;
+  padding-top: 15rem;
+  padding-bottom: 30rem;
 
-    padding: 15rem;
-  @media only screen and (max-width: $bp-largest) {
-    padding: 0 15rem; 
+  z-index: 1;
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
-  
-  
 
- 
+  @media only screen and (max-width: $bp-medium-s) {
+    padding-bottom: 20rem;
+  }
 
-    background-color: $color-grey-light-2;
-    margin-top: -17rem;
-    padding-top: 15rem;
-    padding-bottom: 30rem;
+  &-container {
+    max-width: 150rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-  
-    z-index: 1;
+  &__title {
+    font-size: 3rem;
+    color: $color-grey-light;
 
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );   
-    }
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 4px solid rgba($color-grey-light, 0.1);
 
-    &-container {
-        max-width: 150rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-   
-
-    &__title {
-        
-        
-        font-size: 3rem;
-        color: $color-grey-light; 
-
-        text-transform: uppercase;
-        font-weight: 400;
-        border-bottom: 4px solid rgba($color-grey-light,0.1);
-
-        padding-bottom: 1.5rem;
-        margin-bottom: 5rem;
-        margin-top: 5rem;
-
-        
-        
-    }
-
-
+    padding-bottom: 1.5rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
 }
-

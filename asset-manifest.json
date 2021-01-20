@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.6dbae884.chunk.css",
-    "main.js": "/Portfolio/static/js/main.e0ed40e3.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.e0ed40e3.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.896df889.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.896df889.js.map",
-    "static/js/2.0748e5c8.chunk.js": "/Portfolio/static/js/2.0748e5c8.chunk.js",
-    "static/js/2.0748e5c8.chunk.js.map": "/Portfolio/static/js/2.0748e5c8.chunk.js.map",
-    "index.html": "/Portfolio/index.html",
-    "static/css/main.6dbae884.chunk.css.map": "/Portfolio/static/css/main.6dbae884.chunk.css.map",
-    "static/js/2.0748e5c8.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.0748e5c8.chunk.js.LICENSE.txt",
-    "static/media/Ryan-CV.34f5ceb3.pdf": "/Portfolio/static/media/Ryan-CV.34f5ceb3.pdf",
-    "static/media/naturebyholly.da656df5.jpg": "/Portfolio/static/media/naturebyholly.da656df5.jpg",
-    "static/media/ryan-1.3d67137a.jpg": "/Portfolio/static/media/ryan-1.3d67137a.jpg",
-    "static/media/todolist.2b0af268.png": "/Portfolio/static/media/todolist.2b0af268.png"
+    "main.css": "/Portfolio.github.io/static/css/main.6dbae884.chunk.css",
+    "main.js": "/Portfolio.github.io/static/js/main.e0ed40e3.chunk.js",
+    "main.js.map": "/Portfolio.github.io/static/js/main.e0ed40e3.chunk.js.map",
+    "runtime-main.js": "/Portfolio.github.io/static/js/runtime-main.b3c0cb24.js",
+    "runtime-main.js.map": "/Portfolio.github.io/static/js/runtime-main.b3c0cb24.js.map",
+    "static/js/2.0748e5c8.chunk.js": "/Portfolio.github.io/static/js/2.0748e5c8.chunk.js",
+    "static/js/2.0748e5c8.chunk.js.map": "/Portfolio.github.io/static/js/2.0748e5c8.chunk.js.map",
+    "index.html": "/Portfolio.github.io/index.html",
+    "static/css/main.6dbae884.chunk.css.map": "/Portfolio.github.io/static/css/main.6dbae884.chunk.css.map",
+    "static/js/2.0748e5c8.chunk.js.LICENSE.txt": "/Portfolio.github.io/static/js/2.0748e5c8.chunk.js.LICENSE.txt",
+    "static/media/Ryan-CV.34f5ceb3.pdf": "/Portfolio.github.io/static/media/Ryan-CV.34f5ceb3.pdf",
+    "static/media/naturebyholly.da656df5.jpg": "/Portfolio.github.io/static/media/naturebyholly.da656df5.jpg",
+    "static/media/ryan-1.3d67137a.jpg": "/Portfolio.github.io/static/media/ryan-1.3d67137a.jpg",
+    "static/media/todolist.2b0af268.png": "/Portfolio.github.io/static/media/todolist.2b0af268.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.896df889.js",
+    "static/js/runtime-main.b3c0cb24.js",
     "static/js/2.0748e5c8.chunk.js",
     "static/css/main.6dbae884.chunk.css",
     "static/js/main.e0ed40e3.chunk.js"

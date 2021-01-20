@@ -6,6 +6,14 @@
   gap: 15rem;
   margin: auto;
   max-width: 150rem;
+
+  max-width: 150rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (max-width: $bp-large) {
+    width: 80%;
+  }
 }
 
 .projects-section {

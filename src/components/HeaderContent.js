@@ -41,9 +41,14 @@ const HeaderMain = ({ page }) => {
             last few months. Have a look at my git hub for more!
           </div>
 
-          <a className="btn btn--red" href="https://github.com/ryanstewart1233">
+          <Button
+            className="btn btn--red"
+            to="https://github.com/ryanstewart1233"
+            external={true}
+            color="red"
+          >
             Github
-          </a>
+          </Button>
         </div>
       );
     }

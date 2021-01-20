@@ -1,97 +1,78 @@
-@import '../style-variables/scss-variables';
+@import "../style-variables/scss-variables";
 
 .skills {
-
-    padding: $padding;
+  padding: $padding;
   @media only screen and (max-width: $bp-largest) {
-    padding: 0 15rem; 
+    padding: 0 15rem;
   }
-    
 
-    display: grid;
-    grid-template-rows: min-content auto;
-    grid-template-columns: 40% 60%;
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-template-columns: 40% 60%;
 
-    &__title {
+  &__title {
+    grid-column: 1/3;
 
-        grid-column: 1/3;
+    padding-bottom: 1.5rem;
 
+    font-size: 3rem;
+    color: $color-grey-light;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 4px solid rgba($color-grey-light, 0.1);
+  }
 
-        padding-bottom: 1.5rem;
-        
-        
-        font-size: 3rem;
-        color: $color-grey-light;
-        text-transform: uppercase;
-        font-weight: 400;
-        border-bottom: 4px solid rgba($color-grey-light,0.1);
-        
+  &__text {
+    grid-row: 2/4;
+    align-self: center;
+
+    font-size: 2rem;
+    margin-right: 3rem;
+  }
+
+  &__bar-container {
+    grid-column: 2/3;
+    grid-row: 2/4;
+
+    height: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin-top: 3rem;
+  }
+
+  &__bar {
+    background-color: $color-dark-1;
+
+    padding: 0.5rem 1rem;
+
+    border-radius: 10rem;
+
+    color: $color-white;
+
+    display: flex;
+    justify-content: start;
+
+    font-size: 1.5rem;
+
+    &__name {
+      font-weight: 500;
+
+      width: 9rem;
+      text-align: center;
     }
 
-    &__text {
-        grid-row: 2/4;
-        align-self:center;
-
-        font-size: 2rem;
-        margin-right: 3rem;
+    &__progress {
+      background-color: $color-red;
+      height: calc(100% + 1rem);
+      transform: translateY(-0.5rem);
+      display: block;
     }
 
-
-    &__bar-container {
-        grid-column: 2/3;
-        grid-row: 2/4;
-
-        height: 40rem;
-       
-
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-
-        margin-top: 3rem;
-
-
-        
-
-        
-
-
+    &__percentage {
+      margin-left: auto;
     }
-
-    &__bar {
-        background-color: $color-dark-1;
-
-        padding: 0.5rem 1rem;
-
-        border-radius: 10rem;
-        
-        color: $color-white;
-
-        display: flex;
-        justify-content: start;
-
-        font-size: 1.5rem;
-        
-
-        &__name {
-            
-            font-weight: 500;
-
-            width: 9rem;
-            text-align: center;
-        }
-
-        &__progress {
-            background-color: $color-red;
-            height: calc(100% + 1rem);
-            transform: translateY(-0.5rem);
-            display: block;
-            
-        }
-
-        &__percentage {
-            margin-left: auto;
-        }
-        
-    }
+  }
 }

@@ -17,8 +17,8 @@ const Skills = () => {
         <SkillBar name="CSS" percent="80" />
         <SkillBar name="Javascript" percent="70" />
         <SkillBar name="Python" percent="60" />
+        <SkillBar name="React" percent="60" />
         <SkillBar name="NodeJS" percent="55" />
-        <SkillBar name="React" percent="50" />
         <SkillBar name="MongoDB" percent="50" />
         <SkillBar name="SQL" percent="40" />
       </div>

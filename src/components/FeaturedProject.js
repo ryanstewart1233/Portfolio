@@ -12,7 +12,7 @@ const FeaturedProject = () => {
         <div className="featured-project__title">Featured Project</div>
         <Project
           image={ToDoImg}
-          title="Full Stack ToDo App"
+          title="Full Stack To Do App"
           btnText="See the site"
           link="https://todolist1233.herokuapp.com/"
           external={true}
@@ -20,21 +20,24 @@ const FeaturedProject = () => {
           <div className="project__description__container">
             <span className="project__description__container--1">
               <span>
-                A simple todo list app that I have created to solidify and
+                A simple to do list app that I have created to solidify and
                 demonstrate my knowledge of many technologies that I have
                 learnt.
               </span>
               <br />
-              <span>Technologies used in this project are as follows:</span>
             </span>
-            <ul className="project__description__list">
-              <li>React</li>
-              <li>Redux for state management</li>
-              <li>MongoDB for the database (using mongoose to connect)</li>
-              <li>Node/express for the backend API server</li>
-              <li>Authorization using google</li>
-              <li>Sass for the CSS</li>
-            </ul>
+            <span>
+              <span>Technologies used in this project are as follows:</span>
+              <ul className="project__description__list">
+                <li>React</li>
+                <li>Redux for state management</li>
+                <li>MongoDB for the database (using mongoose to connect)</li>
+                <li>Node/express for the backend API server</li>
+                <li>Authorization using google</li>
+                <li>Sass for the CSS</li>
+              </ul>
+            </span>
+
             <span>
               All code for this project can be found on my github page.
             </span>

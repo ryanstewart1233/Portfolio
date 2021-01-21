@@ -7,10 +7,17 @@ const Skills = () => {
     <section className="skills">
       <div className="skills__title">Skills</div>
       <div className="skills__text">
-        Despite only coding for a little under a year I have learnt a huge
-        amount in a short time thanks to lockdown. Programming really has become
-        a great hobby and passion and I cannot wait to learn more in a
-        professional position
+        Over the last year I have taught myself how to code. After starting with
+        a Python course online, I realised that is something that I have a great
+        passion for. I continued to do further coursed in full-stack web
+        development and in React. Since that time I have started creating all my
+        own projects from scratch.
+        <br />
+        <br />
+        Although my previous experience has been in biochemistry which I have
+        obtained a first class degree for, many of the skills in which I have
+        learnt such as problem-solving and critical thinking are transferable. I
+        am now looking for my first professional role.
       </div>
       <div className="skills__bar-container">
         <SkillBar name="HTML" percent="80" />

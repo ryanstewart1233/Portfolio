@@ -14,7 +14,7 @@ const HeaderMain = ({ page }) => {
               Hi, I'm <span>Ryan</span>.
             </div>
             <div className="h-content__title h-content__title-2">
-              A self taught web developer based in bournemouth. Currently
+              A self taught web developer based in Bournemouth. Currently
               looking for my first professional position.
             </div>
             <Button color="red" to="/projects">
@@ -37,8 +37,8 @@ const HeaderMain = ({ page }) => {
             My Projects.
           </div>
           <div className="h-content__title h-content__title-2">
-            Please take a look at a few of my projects I have created in the
-            last few months. Have a look at my git hub for more!
+            Please take a look at a some of my projects that I have created in
+            the last few months. Have a look at my git hub for more!
           </div>
 
           <Button

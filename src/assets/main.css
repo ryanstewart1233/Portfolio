@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #060e20;
+  --color-surface-bright: #1f2b49;
+  --color-surface-container: #0f1930;
+  --color-surface-container-high: #141f38;
+  --color-surface-container-highest: #192540;
+  --color-surface-container-low: #091328;
+  --color-surface-variant: #192540;
+  --color-on-surface: #dee5ff;
+  --color-on-surface-variant: #a3aac4;
+  --color-primary: #9fa7ff;
+  --color-primary-dim: #8a95ff;
+  --color-primary-container: #8d98ff;
+  --color-on-primary-fixed: #000000;
+  --color-secondary: #c7c3fe;
+  --color-secondary-container: #444173;
+  --color-on-secondary-container: #cfcbff;
+  --color-tertiary: #c890ff;
+  --color-tertiary-dim: #be83fa;
+  --color-outline: #6d758c;
+  --color-outline-variant: #40485d;
+  --font-family-headline: 'Space Grotesk', sans-serif;
+  --font-family-body: 'Inter', sans-serif;
+  --font-family-label: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #060e20;
+  color: #dee5ff;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap');
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-card {
+  background: rgba(25, 37, 64, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(64, 72, 93, 0.15);
+  transition: all 0.3s;
+}
+
+.glass-card:hover {
+  background: rgba(25, 37, 64, 0.6);
+  border-color: rgba(159, 167, 255, 0.4);
+  box-shadow: 0 0 20px rgba(159, 167, 255, 0.1);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #9fa7ff, #c890ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, #9fa7ff, #c890ff);
+  color: #000000;
+}
+
+.gradient-btn:hover {
+  filter: brightness(1.1);
+}

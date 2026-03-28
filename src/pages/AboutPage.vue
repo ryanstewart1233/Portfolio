@@ -2,6 +2,8 @@
 import { useHead } from '@unhead/vue'
 import { personal } from '@/data/personal'
 
+const base = import.meta.env.BASE_URL
+
 useHead({
   title: 'About — Ryan Stewart',
   meta: [
@@ -23,7 +25,7 @@ useHead({
 
     <!-- Skills -->
     <section class="mb-16">
-      <span class="font-label text-sm font-medium uppercase tracking-widest text-primary">Expertise</span>
+      <span class="font-label text-sm font-medium uppercase tracking-widest text-primary">Skills</span>
       <h2 class="mt-2 font-headline text-3xl font-bold text-on-surface">Skills</h2>
       <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div
@@ -91,14 +93,23 @@ useHead({
           Get in <span class="text-primary">touch</span>
         </h2>
         <p class="mx-auto mb-10 mt-6 max-w-2xl font-body text-xl text-on-surface-variant">
-          Want to work together or have a question about one of my projects?
+          Drop me an email.
         </p>
-        <a
-          :href="`mailto:${personal.contactEmail}`"
-          class="gradient-btn inline-block rounded-full px-10 py-5 text-xl font-bold transition-all hover:shadow-[0_0_30px_rgba(159,167,255,0.4)]"
-        >
-          Get in Touch
-        </a>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            :href="`mailto:${personal.contactEmail}`"
+            class="gradient-btn inline-block rounded-full px-10 py-5 text-xl font-bold transition-all hover:shadow-[0_0_30px_rgba(159,167,255,0.4)]"
+          >
+            Get in Touch
+          </a>
+          <a
+            :href="`${base}Ryan-Stewart-CV.pdf`"
+            download
+            class="inline-block rounded-full border border-outline-variant/30 bg-transparent px-10 py-5 text-xl font-bold text-on-surface transition-all hover:bg-surface-container-highest"
+          >
+            Download CV
+          </a>
+        </div>
       </div>
     </section>
 

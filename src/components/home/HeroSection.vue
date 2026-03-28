@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { personal } from '@/data/personal'
+
+function scrollToProjects() {
+  document.getElementById('apps')?.scrollIntoView({ behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -11,22 +15,22 @@ import { personal } from '@/data/personal'
     </div>
 
     <div class="w-full md:w-2/3">
+      <h1 class="mb-4 font-headline text-6xl font-bold leading-[0.9] tracking-tighter text-on-surface md:text-8xl">
+        {{ personal.name }}
+      </h1>
       <p class="mb-6 font-label text-sm font-semibold uppercase tracking-widest text-primary">
         {{ personal.title }}
       </p>
-      <h1 class="mb-8 font-headline text-6xl font-bold leading-[0.9] tracking-tighter text-on-surface md:text-8xl">
-        I build things and <span class="gradient-text">ship</span> them.
-      </h1>
       <p class="mb-12 max-w-2xl font-body text-xl leading-relaxed text-on-surface-variant md:text-2xl">
         {{ personal.bio }}
       </p>
       <div class="flex flex-wrap gap-4">
-        <a
-          href="#apps"
+        <button
+          @click="scrollToProjects"
           class="gradient-btn rounded-full px-8 py-4 text-lg font-semibold transition-all"
         >
           View Projects
-        </a>
+        </button>
         <RouterLink
           to="/about"
           class="rounded-full border border-outline-variant/30 bg-transparent px-8 py-4 text-lg font-semibold text-on-surface transition-all hover:bg-surface-container-highest"

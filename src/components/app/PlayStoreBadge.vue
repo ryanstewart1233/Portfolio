@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{ url: string }>()
-const badgeSrc = `${import.meta.env.BASE_URL}images/google-play-badge.svg`
+const badgeSrc = `${import.meta.env.BASE_URL}images/google-play-badge.png`
 </script>
 
 <template>

@@ -36,13 +36,17 @@ export interface SocialLink {
 
 export const personal: PersonalData = {
   name: 'Ryan Stewart',
-  title: 'Senior Software Engineer',
-  bio: 'Backend engineer with experience across PHP, C#, Python, and more. I build and ship things — APIs, Android apps, tools, whatever solves the problem. Currently working on side projects in Kotlin and Vue while doing backend work professionally.',
+  title: 'Senior Backend Engineer',
+  bio: '5+ years building backend systems and APIs. Outside of work I like to build things and learn new tech.',
   avatar: '/images/avatar.jpg',
   skills: [
     {
       category: 'Languages & Frameworks',
-      items: ['PHP (Symfony 7)', 'Python', 'C# / .NET', 'JavaScript', 'Vue.js', 'Kotlin', 'Jetpack Compose'],
+      items: ['PHP (Symfony 7)', 'Go', 'Python', 'C# / .NET', 'JavaScript', 'Vue.js', 'Kotlin', 'Jetpack Compose'],
+    },
+    {
+      category: 'Architecture & APIs',
+      items: ['REST APIs', 'Microservices', 'Service-oriented architecture'],
     },
     {
       category: 'Databases',
@@ -50,23 +54,31 @@ export const personal: PersonalData = {
     },
     {
       category: 'DevOps & Infrastructure',
-      items: ['Docker', 'AWS', 'GitHub Actions', 'GitLab CI', 'CircleCI', 'Linux', 'k9s'],
+      items: ['Docker', 'Kubernetes', 'Nginx', 'AWS', 'GitHub Actions', 'GitLab CI', 'CircleCI', 'Linux'],
     },
     {
-      category: 'Messaging & Monitoring',
-      items: ['RabbitMQ', 'SQS', 'Grafana'],
+      category: 'Testing & Monitoring',
+      items: ['PHPUnit', 'Sentry', 'Grafana'],
     },
     {
-      category: 'AI & Emerging Tech',
-      items: ['Prompt engineering', 'LLM integration', 'AI-assisted tooling'],
+      category: 'AI & Developer Productivity',
+      items: ['Agentic coding workflows', 'Claude Code', 'Codex', 'Playwright', 'LLM integration', 'Prompt engineering'],
+    },
+    {
+      category: 'Messaging & Queues',
+      items: ['RabbitMQ', 'SQS'],
+    },
+    {
+      category: 'Tools & Project Management',
+      items: ['Git', 'GitHub', 'GitLab', 'Bitbucket', 'Jira'],
     },
   ],
   experience: [
     {
-      role: 'Backend API Developer',
+      role: 'Senior Backend Engineer',
       company: 'Nourish Care',
       period: 'Oct 2024 — Present',
-      description: 'Migrating a legacy Drupal monolith to a Symfony-based PHP API. Halved CI/CD test suite runtime. Mentoring junior developers and contributing to a Vue.js frontend migration.',
+      description: 'Migrating a legacy Drupal monolith to a Symfony-based PHP API. Building internal tooling in Go. Halved CI/CD test suite runtime. Working full-stack across Vue.js frontend and backend API.',
     },
     {
       role: 'Software Engineer',
@@ -98,6 +110,16 @@ export const personal: PersonalData = {
       label: 'GitHub',
       url: 'https://github.com/ryanstewart1233',
       icon: 'github',
+    },
+    {
+      label: 'GitHub (Work)',
+      url: 'https://github.com/ryan-stewart1233',
+      icon: 'github',
+    },
+    {
+      label: 'LinkedIn',
+      url: 'https://linkedin.com/in/ryan-stewart-80a975146',
+      icon: 'linkedin',
     },
   ],
   contactEmail: 'ryansramblings93@gmail.com',

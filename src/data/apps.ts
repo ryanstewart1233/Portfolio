@@ -34,11 +34,11 @@ export const apps: AppData[] = [
     tagline: 'Filter blue light with warm screen tints to reduce eye strain at night',
     description:
       'DuskScreen applies a warm colour overlay to your screen, reducing blue light emission to help you sleep better. Choose from preset tints or create your own custom colour filter. Set timers to automatically turn off the filter, and enjoy a comfortable viewing experience even in the dark.',
-    icon: '/images/apps/duskscreen/icon.png',
+    icon: '/images/apps/duskscreen/icon.webp',
     screenshots: [
-      '/images/apps/duskscreen/screenshot-1.png',
-      '/images/apps/duskscreen/screenshot-2.png',
-      '/images/apps/duskscreen/screenshot-3.png',
+      '/images/apps/duskscreen/screenshot-1.jpg',
+      '/images/apps/duskscreen/screenshot-2.jpg',
+      '/images/apps/duskscreen/screenshot-3.jpg',
     ],
     playStoreUrl: 'https://play.google.com/store/apps/details?id=com.screendimmer.app',
     category: 'Tools',

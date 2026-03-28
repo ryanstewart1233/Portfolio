@@ -4,10 +4,10 @@ import HeroSection from '@/components/home/HeroSection.vue'
 import AppShowcaseGrid from '@/components/home/AppShowcaseGrid.vue'
 
 useHead({
-  title: 'Ryan Stewart — Senior Software Engineer',
+  title: 'Ryan Stewart — Senior Backend Engineer',
   meta: [
-    { name: 'description', content: 'Ryan Stewart — Senior Software Engineer. Apps, tools, and side projects.' },
-    { property: 'og:title', content: 'Ryan Stewart — Senior Software Engineer' },
+    { name: 'description', content: 'Ryan Stewart — Senior Backend Engineer. Apps, tools, and side projects.' },
+    { property: 'og:title', content: 'Ryan Stewart — Senior Backend Engineer' },
     { property: 'og:description', content: 'Apps, tools, and side projects by Ryan Stewart.' },
   ],
 })
